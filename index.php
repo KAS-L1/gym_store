@@ -1,5 +1,5 @@
 <?php require("app/init.php") ?>
-<?php require("api/auth/auth.php") ?>
+
 
 <?php $PAGE = GET(0) ?>
 
@@ -22,6 +22,7 @@ if ($PAGE != "index") {
 
 ?>
 
-
-
 <?php include("page/_inc/Footer.php") ?>
+
+
+

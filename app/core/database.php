@@ -8,9 +8,9 @@ class Database
 {
     // Database connection settings
     public $DB_HOST = "localhost";
-    public $DB_USER = "logi_hotel_crm";
-    public $DB_PASSWORD = "logi_hotel_crm";
-    public $DB_NAME = "logi_hotel_crm";
+    public $DB_USER = "root";
+    public $DB_PASSWORD = "";
+    public $DB_NAME = "";
     public $DB;
 
     // Constructor to establish database connection
