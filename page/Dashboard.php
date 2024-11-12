@@ -1,9 +1,129 @@
+<section style="position: relative; background-image: url('images/bgeuip.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <!-- Overlay for improved readability -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>
+
+    <div class="container-lg position-relative" style="z-index: 1;">
+        <div class="row">
+            <div class="col-lg-6 pt-5 mt-5">
+                <h2 class="display-1 ls-1 text-white">
+                    <span class="fw-bold text-primary">Fitness</span> and Health at your <span class="fw-bold">Convenience</span>
+                </h2>
+                <p class="fs-4 text-white">Join us and reach your fitness goals.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Join Now</a>
+                    <a href="#" class="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Learn More</a>
+                </div>
+                <div class="row my-5">
+                    <div class="col">
+                        <div class="row text-white">
+                            <div class="col-auto">
+                                <p class="fs-1 fw-bold lh-sm mb-0">100+</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-uppercase lh-sm mb-0">Gym Equipment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row text-white">
+                            <div class="col-auto">
+                                <p class="fs-1 fw-bold lh-sm mb-0">20k+</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-uppercase lh-sm mb-0">Satisfied Members</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row text-white">
+                            <div class="col-auto">
+                                <p class="fs-1 fw-bold lh-sm mb-0">15</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-uppercase lh-sm mb-0">Locations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-3 justify-content-center">
+            <div class="col">
+                <div class="card border-0 bg-primary rounded-0 p-4 text-light h-100 d-flex align-items-stretch">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-3 text-center">
+                            <svg width="60" height="60">
+                                <use xlink:href="#weights"></use> <!-- Replace with appropriate fitness icon -->
+                            </svg>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body p-0">
+                                <h5 class="text-light">State-of-the-art Equipment</h5>
+                                <p class="card-text">Our gym is equipped with top-quality machines and weights for all fitness levels.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 bg-secondary rounded-0 p-4 text-light h-100 d-flex align-items-stretch">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-3 text-center">
+                            <svg width="60" height="60">
+                                <use xlink:href="#personal-trainer"></use> <!-- Replace with appropriate fitness icon -->
+                            </svg>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body p-0">
+                                <h5 class="text-light">Personal Training</h5>
+                                <p class="card-text">Certified trainers to guide you every step of the way in your fitness journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 bg-danger rounded-0 p-4 text-light h-100 d-flex align-items-stretch">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-3 text-center">
+                            <svg width="60" height="60">
+                                <use xlink:href="#nutrition"></use> <!-- Replace with appropriate fitness icon -->
+                            </svg>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body p-0">
+                                <h5 class="text-light">Nutrition Plans</h5>
+                                <p class="card-text">Custom nutrition and diet plans tailored to help you reach your goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .category-carousel .swiper-slide img {
+        width: 100px;
+        /* Adjust the width as needed */
+        height: 100px;
+        /* Adjust the height as needed */
+        object-fit: cover;
+        /* Ensure the image covers the area */
+        border-radius: 50%;
+        /* Make it circular */
+    }
+</style>
+
 <section class="py-5 overflow-hidden">
     <div class="container-lg">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-header d-flex flex-wrap justify-content-between mb-5">
-                    <h2 class="section-title">Gym & Fitness</h2>
+                    <h2 class="section-title">Gym & Fitness Categories</h2>
                     <div class="d-flex align-items-center">
                         <a href="#" class="btn btn-primary me-2">View All</a>
                         <div class="swiper-buttons">
@@ -18,46 +138,65 @@
             <div class="col-md-12">
                 <div class="category-carousel swiper">
                     <div class="swiper-wrapper">
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Weights" alt="Weights">
-                            <h4 class="category-title">Weights</h4>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Cardio+Machines" alt="Cardio Machines">
-                            <h4 class="category-title">Cardio Machines</h4>
+
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Yoga+Mats" alt="Yoga Mats">
-                            <h4 class="category-title">Yoga Mats</h4>
+
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Supplements" alt="Supplements">
-                            <h4 class="category-title">Supplements</h4>
+
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Gym+Apparel" alt="Gym Apparel">
-                            <h4 class="category-title">Gym Apparel</h4>
+
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Shoes" alt="Shoes">
-                            <h4 class="category-title">Shoes</h4>
+
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Resistance+Bands" alt="Resistance Bands">
-                            <h4 class="category-title">Resistance Bands</h4>
+
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Kettlebells" alt="Kettlebells">
-                            <h4 class="category-title">Kettlebells</h4>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=Foam+Rollers" alt="Foam Rollers">
-                            <h4 class="category-title">Foam Rollers</h4>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
-                        <a href="category.html" class="nav-link swiper-slide">
-                            <img src="https://via.placeholder.com/80?text=CrossFit" alt="CrossFit">
-                            <h4 class="category-title">CrossFit</h4>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
                         </a>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
+                        </a>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
+                        </a>
+                        <a href="category.html" class="nav-link swiper-slide text-center">
+                            <img src="images/category-dumbell.jpg" alt="Dumbbells">
+                            <h4 class="fs-6 mt-3 fw-normal category-title">Dumbbells</h4>
+                        </a>
+                        <!-- Add additional items as needed -->
                     </div>
                 </div>
             </div>
@@ -65,121 +204,169 @@
     </div>
 </section>
 
+<style>
+    .product-item {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        background-color: #ffffff;
+        max-width: 280px;
+        margin: auto;
+        overflow: hidden;
+    }
 
-<section class="py-5 overflow-hidden">
-    <div class="container-lg">
-        <div class="row">
-            <div class="col-md-12">
+    .product-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    }
 
-                <div class="section-header d-flex flex-wrap justify-content-between mb-5">
-                    <h2 class="section-title">Category</h2>
+    .product-item figure {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-                    <div class="d-flex align-items-center">
-                        <a href="#" class="btn btn-primary me-2">View All</a>
-                        <div class="swiper-buttons">
-                            <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
-                            <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
-                        </div>
-                    </div>
-                </div>
+    .product-item img {
+        width: 100%;
+        max-height: 180px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+    .product-item h3 {
+        font-size: 1.1rem;
+        margin: 10px 0;
+        font-weight: 600;
+        color: #333;
+    }
 
-                <div class="category-carousel swiper">
-                    <div class="swiper-wrapper">
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-2.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Breads & Sweets</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-3.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-4.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Beverages</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-5.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-6.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Breads</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-7.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-8.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Breads & Sweets</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Beverages</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
-                        </a>
-                        <a href="category.html" class="nav-link swiper-slide text-center">
-                            <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
-                            <h4 class="fs-6 mt-3 fw-normal category-title">Breads</h4>
-                        </a>
+    .product-item .rating {
+        margin: 5px 0;
+    }
 
-                    </div>
-                </div>
+    .product-item .rating svg {
+        margin-right: 2px;
+        fill: #ffc107;
+        /* Ensure stars have a consistent color */
+    }
 
-            </div>
-        </div>
-    </div>
-    `
-</section>
-`
+    .product-item .price-info {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .price-info del {
+        color: #999;
+        margin-right: 5px;
+    }
+
+    .product-item .button-area {
+        margin-top: 15px;
+    }
+
+    .btn-cart {
+        width: 100%;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 0.9rem;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+
+    .btn-cart:hover {
+        background-color: #0056b3;
+        color: #ffffff;
+    }
+
+    .btn-cart svg {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .product-item img {
+        width: 100%;
+        max-height: 180px;
+        object-fit: cover;
+    }
+
+    .btn-cart,
+    .quantity {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .product-item .quantity {
+        max-width: 60px;
+    }
+
+    .category-carousel .swiper-button-next,
+    .category-carousel .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<script>
+    const swiper = new Swiper('.category-carousel', {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.category-carousel-next',
+            prevEl: '.category-carousel-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            1400: {
+                slidesPerView: 4,
+            },
+        },
+    });
+</script>
 <section class="pb-5">
     <div class="container-lg">
 
         <div class="row">
             <div class="col-md-12">
-
                 <div class="section-header d-flex flex-wrap justify-content-between my-4">
-
-                    <h2 class="section-title">Best selling products</h2>
-
+                    <h2 class="section-title">Best Selling Fitness Products</h2>
                     <div class="d-flex align-items-center">
-                        <a href="#" class="btn btn-primary rounded-1">View All</a>
+                        <a href="#" class="btn btn-primary rounded-1 me-2">View All</a>
+                        <div class="swiper-buttons">
+                            <button class="swiper-prev category-carousel-prev btn btn-outline-secondary">❮</button>
+                            <button class="swiper-next category-carousel-next btn btn-outline-secondary">❯</button>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-
                 <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
 
+                    <!-- dumbell -->
                     <div class="col">
                         <div class="product-item">
                             <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-1.png" alt="Product Thumbnail" class="tab-image">
+                                <a href="index.html" title="Adjustable Dumbbells">
+                                    <img src="/images/product-adjustable-gumbell.jpg" alt="Adjustable Dumbbells">
                                 </a>
                             </figure>
                             <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
+                                <h3 class="fs-6 fw-normal">Adjustable Dumbbells</h3>
                                 <div>
                                     <span class="rating">
                                         <svg width="18" height="18" class="text-warning">
@@ -198,37 +385,40 @@
                                             <use xlink:href="#star-half"></use>
                                         </svg>
                                     </span>
-                                    <span>(222)</span>
+                                    <span>(98)</span>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
+                                <div class="price-info d-flex justify-content-center align-items-center gap-2">
+                                    <del>$80.00</del>
+                                    <span class="text-dark fw-semibold">$70.00</span>
+                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">15% OFF</span>
                                 </div>
                                 <div class="button-area p-3 pt-0">
                                     <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
+                                        <div class="col-3">
+                                            <input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1">
+                                        </div>
+                                        <div class="col-9">
+                                            <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                <svg width="18" height="18">
                                                     <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
+                                                </svg> Add to Cart
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- dumbell -->
                     <div class="col">
                         <div class="product-item">
                             <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-2.png" alt="Product Thumbnail" class="tab-image">
+                                <a href="index.html" title="Adjustable Dumbbells">
+                                    <img src="/images/product-adjustable-gumbell.jpg" alt="Adjustable Dumbbells">
                                 </a>
                             </figure>
                             <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Whole Grain Oatmeal</h3>
+                                <h3 class="fs-6 fw-normal">Adjustable Dumbbells</h3>
                                 <div>
                                     <span class="rating">
                                         <svg width="18" height="18" class="text-warning">
@@ -247,37 +437,40 @@
                                             <use xlink:href="#star-half"></use>
                                         </svg>
                                     </span>
-                                    <span>(41)</span>
+                                    <span>(98)</span>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$54.00</del>
-                                    <span class="text-dark fw-semibold">$50.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
+                                <div class="price-info d-flex justify-content-center align-items-center gap-2">
+                                    <del>$80.00</del>
+                                    <span class="text-dark fw-semibold">$70.00</span>
+                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">15% OFF</span>
                                 </div>
                                 <div class="button-area p-3 pt-0">
                                     <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
+                                        <div class="col-3">
+                                            <input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1">
+                                        </div>
+                                        <div class="col-9">
+                                            <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                <svg width="18" height="18">
                                                     <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
+                                                </svg> Add to Cart
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- dumbell -->
                     <div class="col">
                         <div class="product-item">
                             <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-3.png" alt="Product Thumbnail" class="tab-image">
+                                <a href="index.html" title="Adjustable Dumbbells">
+                                    <img src="/images/product-adjustable-gumbell.jpg" alt="Adjustable Dumbbells">
                                 </a>
                             </figure>
                             <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Sharp Cheddar Cheese Block</h3>
+                                <h3 class="fs-6 fw-normal">Adjustable Dumbbells</h3>
                                 <div>
                                     <span class="rating">
                                         <svg width="18" height="18" class="text-warning">
@@ -296,37 +489,40 @@
                                             <use xlink:href="#star-half"></use>
                                         </svg>
                                     </span>
-                                    <span>(32)</span>
+                                    <span>(98)</span>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$14.00</del>
-                                    <span class="text-dark fw-semibold">$12.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
+                                <div class="price-info d-flex justify-content-center align-items-center gap-2">
+                                    <del>$80.00</del>
+                                    <span class="text-dark fw-semibold">$70.00</span>
+                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">15% OFF</span>
                                 </div>
                                 <div class="button-area p-3 pt-0">
                                     <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
+                                        <div class="col-3">
+                                            <input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1">
+                                        </div>
+                                        <div class="col-9">
+                                            <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                <svg width="18" height="18">
                                                     <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
+                                                </svg> Add to Cart
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- dumbell -->
                     <div class="col">
                         <div class="product-item">
                             <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-4.png" alt="Product Thumbnail" class="tab-image">
+                                <a href="index.html" title="Adjustable Dumbbells">
+                                    <img src="/images/product-adjustable-gumbell.jpg" alt="Adjustable Dumbbells">
                                 </a>
                             </figure>
                             <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Organic Baby Spinach</h3>
+                                <h3 class="fs-6 fw-normal">Adjustable Dumbbells</h3>
                                 <div>
                                     <span class="rating">
                                         <svg width="18" height="18" class="text-warning">
@@ -345,37 +541,41 @@
                                             <use xlink:href="#star-half"></use>
                                         </svg>
                                     </span>
-                                    <span>(222)</span>
+                                    <span>(98)</span>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
+                                <div class="price-info d-flex justify-content-center align-items-center gap-2">
+                                    <del>$80.00</del>
+                                    <span class="text-dark fw-semibold">$70.00</span>
+                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">15% OFF</span>
                                 </div>
                                 <div class="button-area p-3 pt-0">
                                     <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
+                                        <div class="col-3">
+                                            <input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1">
+                                        </div>
+                                        <div class="col-9">
+                                            <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                <svg width="18" height="18">
                                                     <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
+                                                </svg> Add to Cart
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- dumbell -->
                     <div class="col">
                         <div class="product-item">
                             <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-5.png" alt="Product Thumbnail" class="tab-image">
+                                <a href="index.html" title="Adjustable Dumbbells">
+                                    <img src="/images/product-adjustable-gumbell.jpg" alt="Adjustable Dumbbells">
                                 </a>
                             </figure>
                             <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Organic Spinach Leaves (Fresh Produce)</h3>
+                                <h3 class="fs-6 fw-normal">Adjustable Dumbbells</h3>
                                 <div>
                                     <span class="rating">
                                         <svg width="18" height="18" class="text-warning">
@@ -394,282 +594,42 @@
                                             <use xlink:href="#star-half"></use>
                                         </svg>
                                     </span>
-                                    <span>(222)</span>
+                                    <span>(98)</span>
                                 </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
+                                <div class="price-info d-flex justify-content-center align-items-center gap-2">
+                                    <del>$80.00</del>
+                                    <span class="text-dark fw-semibold">$70.00</span>
+                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">15% OFF</span>
                                 </div>
                                 <div class="button-area p-3 pt-0">
                                     <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
+                                        <div class="col-3">
+                                            <input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1">
+                                        </div>
+                                        <div class="col-9">
+                                            <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                <svg width="18" height="18">
                                                     <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
+                                                </svg> Add to Cart
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="product-item">
-                            <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-6.png" alt="Product Thumbnail" class="tab-image">
-                                </a>
-                            </figure>
-                            <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Fresh Salmon</h3>
-                                <div>
-                                    <span class="rating">
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-half"></use>
-                                        </svg>
-                                    </span>
-                                    <span>(222)</span>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
-                                </div>
-                                <div class="button-area p-3 pt-0">
-                                    <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="product-item">
-                            <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-7.png" alt="Product Thumbnail" class="tab-image">
-                                </a>
-                            </figure>
-                            <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Imported Italian Spaghetti Pasta</h3>
-                                <div>
-                                    <span class="rating">
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-half"></use>
-                                        </svg>
-                                    </span>
-                                    <span>(222)</span>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
-                                </div>
-                                <div class="button-area p-3 pt-0">
-                                    <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="product-item">
-                            <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-8.png" alt="Product Thumbnail" class="tab-image">
-                                </a>
-                            </figure>
-                            <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Granny Smith Apples</h3>
-                                <div>
-                                    <span class="rating">
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-half"></use>
-                                        </svg>
-                                    </span>
-                                    <span>(222)</span>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
-                                </div>
-                                <div class="button-area p-3 pt-0">
-                                    <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="product-item">
-                            <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-9.png" alt="Product Thumbnail" class="tab-image">
-                                </a>
-                            </figure>
-                            <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Organic 2% Reduced Fat Milk </h3>
-                                <div>
-                                    <span class="rating">
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-half"></use>
-                                        </svg>
-                                    </span>
-                                    <span>(222)</span>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
-                                </div>
-                                <div class="button-area p-3 pt-0">
-                                    <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="product-item">
-                            <figure>
-                                <a href="index.html" title="Product Title">
-                                    <img src="images/product-thumb-10.png" alt="Product Thumbnail" class="tab-image">
-                                </a>
-                            </figure>
-                            <div class="d-flex flex-column text-center">
-                                <h3 class="fs-6 fw-normal">Greek Style Plain Yogurt</h3>
-                                <div>
-                                    <span class="rating">
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-full"></use>
-                                        </svg>
-                                        <svg width="18" height="18" class="text-warning">
-                                            <use xlink:href="#star-half"></use>
-                                        </svg>
-                                    </span>
-                                    <span>(222)</span>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                    <del>$24.00</del>
-                                    <span class="text-dark fw-semibold">$18.00</span>
-                                    <span class="badge border border-dark-subtle rounded-0 fw-normal px-1 fs-7 lh-1 text-body-tertiary">10% OFF</span>
-                                </div>
-                                <div class="button-area p-3 pt-0">
-                                    <div class="row g-1 mt-2">
-                                        <div class="col-3"><input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"></div>
-                                        <div class="col-7"><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                                                    <use xlink:href="#cart"></use>
-                                                </svg> Add to Cart</a></div>
-                                        <div class="col-2"><a href="#" class="btn btn-outline-dark rounded-1 p-2 fs-6"><svg width="18" height="18">
-                                                    <use xlink:href="#heart"></use>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- Additional gym-related products can be added following the same structure -->
 
                 </div>
                 <!-- / product-grid -->
-
-
             </div>
         </div>
     </div>
 </section>
+
 
 <section class="py-3">
     <div class="container-lg">
